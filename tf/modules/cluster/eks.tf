@@ -87,6 +87,10 @@ resource "helm_release" "nginx_ingress" {
   namespace  = "kube-system"
 
   set {
+    name  = "controller.service.annotations.service\\.beta\\.kubernetes\\.io/aws-load-balancer-type"
+    value = "nlb"
+  }
+  set {
     name  = "controller.service.type"
     value = "LoadBalancer"
   }
