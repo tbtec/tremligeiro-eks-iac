@@ -1,6 +1,8 @@
+AWS_BUCKET_TERRAFORM=tremligeiro-tf
+
 tf-init:
 	@cd tf \
-		&& terraform init -reconfigure
+		&& terraform init -backend-config="bucket=${AWS_BUCKET_TERRAFORM}"
 
 tf-plan:
 	@cd tf \
