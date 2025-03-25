@@ -1,4 +1,4 @@
-# tremligeiro-eks-iac
+# Trem Ligeiro EKS (Elastic Kubernetes Service)
 
 This applications is responsible for AWS Elastic Kubernetes Service infrastructure of the restaurant "Trem Ligeiro" from Company "Trem Bão Tecnologia".
 
